@@ -1,0 +1,39 @@
+{
+    "name": "arthurkushman/php-wss",
+    "description": "Web-socket server/client with URI parse and multi-process support",
+    "keywords": [
+        "web-sockets",
+        "web socket server",
+        "web socket client",
+        "web socket",
+        "processes",
+        "routes",
+        "php"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/arthurkushman/php-wss",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "WSSC\\": "src",
+            "WSSCTEST\\": "tests"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WSSC\\": "src",
+            "WSSCTEST\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "monolog/monolog": "^1.24",
+        "phpstan/phpstan": "^1.4",
+        "phpbench/phpbench": "^1.2"
+    },
+    "suggest": {
+        "ext-pcntl": "Allows for forking the server process to handle more clients at once"
+    }
+}
